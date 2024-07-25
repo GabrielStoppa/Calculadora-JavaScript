@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora - JS</title>
+</head>
+
+<body>
+    <script src="script.js" defer></script>
+    <div class="calculadora">
+        <div class="titulo">
+            <h1 class="title">Calculadora em JavaScript</h1>
+        </div>
+        <div class="container">
+            <form>
+                <div class="input">
+                    <input type="number" name="i1" id="i1" placeholder="Insira um valor:">
+                    <input type="number" name="i2" id="i2" placeholder="Insira um valor:">
+                </div>
+                <div class="bt">
+                    <div class="buttons">
+                        <button class="button-function" onclick="dividir()" type="button">/</button>
+                    </div>
+                    <div class="buttons">
+                        <button class="button-function" onclick="multiplicar()" type="button">*</button>
+                    </div>
+                    <div class="buttons">
+                        <button class="button-function" onclick="somar()" type="button">+</button>
+                    </div>
+                    <div class="buttons">
+                        <button class="button-function" onclick="subtrair()" type="button">-</button>
+                    </div>
+                    <div class="buttons">
+                        <button class="button-function" onclick="exponenciacao()" type="button">x^</button>
+                    </div>
+                    <div class="buttons">
+                        <button class="button-function" onclick="raizQuadrada()" type="button">√</button>
+                    </div>
+                    <div class="buttons">
+                        <button class="button-function" onclick="porcentagem()" type="button">%</button>
+                    </div>
+                    <div class="buttons">
+                        <button class="button-function" onclick="limparCampo()" type="reset">C</button>
+                    </div>
+                </div>
+                <div class="resultado">
+                    <h1>O Resultado é : <span id="resultado"></span></h1>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
